@@ -1,7 +1,10 @@
 package com.cellxpert.core;
 
 public enum Books {
-    LettersToMilena("9788804682646");
+    LettersToMilena("9788804682646"),
+    TheTrial("9780749399559"),
+    TheMetamorphosis("153953507X"),
+    TheCastle("0805211063");
 
     private String number;
 

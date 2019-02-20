@@ -4,15 +4,16 @@ import com.cellxpert.clients.api.CellXpertClient;
 import com.cellxpert.core.Books;
 import com.cellxpert.core.entitiy.Book;
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 
-public class RegisterSteps {
+public class BooksSteps {
     private CellXpertClient cellXpertClient;
     private Book book;
 
-    public RegisterSteps(CellXpertClient cellXpertClient){
+    public BooksSteps(CellXpertClient cellXpertClient){
         this.cellXpertClient = cellXpertClient;
     }
 
@@ -32,4 +33,5 @@ public class RegisterSteps {
     public void iShouldSeeThatBooksIsNotShippedToMontenegro() {
         Assert.assertEquals(book.items.get(0).saleInfo.isEbook, false);
     }
+
 }
